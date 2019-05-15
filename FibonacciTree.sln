@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciTree", "FibonacciTree\FibonacciTree.csproj", "{A62272F2-9CC6-4260-9ACD-2C0A843A785F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciLibrary", "FibonacciLibrary\FibonacciLibrary.csproj", "{A63F3E7F-689A-4B24-9408-152937034AB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeLibrary", "TreeLibrary\TreeLibrary.csproj", "{13855AAE-B730-42F9-8D82-6E61C3B12C9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A62272F2-9CC6-4260-9ACD-2C0A843A785F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62272F2-9CC6-4260-9ACD-2C0A843A785F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62272F2-9CC6-4260-9ACD-2C0A843A785F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62272F2-9CC6-4260-9ACD-2C0A843A785F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A63F3E7F-689A-4B24-9408-152937034AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63F3E7F-689A-4B24-9408-152937034AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63F3E7F-689A-4B24-9408-152937034AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63F3E7F-689A-4B24-9408-152937034AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13855AAE-B730-42F9-8D82-6E61C3B12C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13855AAE-B730-42F9-8D82-6E61C3B12C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13855AAE-B730-42F9-8D82-6E61C3B12C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13855AAE-B730-42F9-8D82-6E61C3B12C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {068A649B-E239-43B4-9F2C-E611402DE1E8}
+	EndGlobalSection
+EndGlobal
