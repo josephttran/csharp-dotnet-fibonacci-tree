@@ -8,12 +8,27 @@ namespace FibonacciTree
 {
     class Program
     {
-        static void VisitItem(int item) 
+        static int Menu()
         {
-            Console.Write(item);
-            Console.Write(", ");
-        }
+            Console.WriteLine("\n################################");
+            Console.WriteLine("#  Fibonacci Tree Application  #");
+            Console.WriteLine("################################\n");
 
+            Console.WriteLine("Enter a negative number to quit.");
+            Console.Write("Enter a positive number: ");
+
+            string input = Console.ReadLine();
+
+            int number;
+
+            while (!int.TryParse(input, out number))
+            {
+                Console.Write("Please enter a positive number: ");
+                input = Console.ReadLine();
+            }
+
+            return number;
+        }
         static void PrintFibonacciDetails(FibTree fibTree)
         {
             fibTree.PrintTreeLeftToRight();
@@ -35,25 +50,39 @@ namespace FibonacciTree
             fibTree.LevelOrderTraverse();
 
             fibTree.InOrderTraverse(VisitItem);
+            Console.WriteLine();
         }
 
         static void PrintFibonacciList(List<int> fibonacciList, int number)
         {
             string s = String.Join(", ", fibonacciList.ToArray());
-            Console.WriteLine($"Fibonacci Sequence of {number} is: ");
+            Console.WriteLine("______________________________________");
+            Console.WriteLine($"\nFibonacci Sequence of {number} is: ");
             Console.WriteLine(s);
+        }
+        static void VisitItem(int item) 
+        {
+            Console.Write(item);
+            Console.Write(", ");
         }
         static void Main(string[] args)
         {
-            int number = 6;
+            while (true)
+            {
+                int number = Menu();
+                
+                if (number < 0)
+                {
+                    Console.WriteLine("Program exit.");
+                    break;
+                }
 
-            List<int> fibonacciList = Fibonacci.FibSequence(number);
-            FibTree fibTree = new FibTree(number);
+                List<int> fibonacciList = Fibonacci.FibSequence(number);
+                FibTree fibTree = new FibTree(number);
 
-            PrintFibonacciList(fibonacciList, number);
-            PrintFibonacciDetails(fibTree);
-
-            Console.WriteLine("\n\nHello World!");
+                PrintFibonacciList(fibonacciList, number);
+                PrintFibonacciDetails(fibTree);
+            }
         }
     }
 }
